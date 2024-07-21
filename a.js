@@ -1,8 +1,5 @@
-<script>
 document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
-    if (!carousel) return; // Ensure carousel exists
-
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -32,4 +29,3 @@ document.addEventListener('DOMContentLoaded', () => {
         carousel.scrollLeft = scrollLeft - walk;
     });
 });
-</script>
