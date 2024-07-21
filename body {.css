@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.main-content {
+    width: 80%;
+}
+
+.movie-banner {
+    position: relative;
+    text-align: left;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.movie-details {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.movie-details h1 {
+    font-size: 3rem;
+}
+
+.newly-added {
+    color: #00f;
+    font-weight: bold;
+}
+
+.details, .description, .tags {
+    margin: 10px 0;
+}
+
+.watch-now {
+    background-color: #00f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.carousel img {
+    height: 150px;
+    margin: 0 10px;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
