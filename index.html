@@ -3,43 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disney+ Hotstar</title>
+    <title>Movie Streaming Service</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="logo.png" alt="Disney+ Hotstar Logo">
-        </div>
-        <div class="main-content">
-            <div class="movie-banner">
-                <img src="banner.jpg" alt="Young Woman and the Sea" class="banner-image">
-                <div class="movie-details">
-                    <h1>Young Woman and the Sea</h1>
-                    <p class="newly-added">Newly Added</p>
-                    <p class="details">2024 • 2h 9m • English • 13+</p>
-                    <p class="description">This is the extraordinary true story of Trudy Ederle, the first woman to successfully swim the English Channel.</p>
-                    <p class="tags">Drama | Romance | Emotional | Girl Power</p>
-                    <button class="watch-now">Watch Now</button>
+        <aside class="sidebar">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Animation</a></li>
+                    <li><a href="#">Genres</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <input type="text" placeholder="Search..." class="search-bar">
+                <div class="user-profile">
+                    <img src="images/user-avatar.png" alt="User">
+                </div>
+            </header>
+            <section class="featured">
+                <img src="images/quantumania.jpg" alt="Quantumania" class="featured-image">
+                <div class="featured-details">
+                    <h1>Quantumania</h1>
+                    <p>1 Season • 6 Episodes • Superhero • Marvel</p>
+                    <button class="btn">Watch Thriller</button>
+                    <button class="btn-secondary">Add to Watchlist</button>
+                </div>
+            </section>
+            <section class="continue-watching">
+                <h2>Continue Watching</h2>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="images/wakanda-forever.jpg" alt="Wakanda Forever">
+                        <p>Wakanda Forever • 2022</p>
+                        <progress value="45" max="100"></progress>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/avatar.jpg" alt="Avatar: The Way of Water">
+                        <p>Avatar: The Way of Water • 2022</p>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside class="right-sidebar">
+            <div class="favorites-genres">
+                <h2>Favorites Genres</h2>
+                <div class="tags">
+                    <span>Action</span>
+                    <span>Sci-Fi</span>
+                    <span>Mystery</span>
+                    <span>Horror</span>
+                    <span>Fantasy</span>
+                    <span>Romance</span>
+                    <span>Drama</span>
                 </div>
             </div>
-            <div class="carousel">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
-                <!-- Add more images as needed -->
+            <div class="recent-downloads">
+                <h2>Recent Downloads</h2>
+                <div class="download-item">
+                    <img src="images/guardians.jpg" alt="Guardians of the Galaxy Vol 3">
+                    <p>Guardians of the Galaxy Vol 3 • 2022</p>
+                    <progress value="30" max="100"></progress>
+                </div>
+                <div class="download-item">
+                    <img src="images/thor.jpg" alt="Thor: Love and Thunder">
+                    <p>Thor: Love and Thunder • 2022</p>
+                    <progress value="50" max="100"></progress>
+                </div>
             </div>
-        </div>
-        <div class="footer">
-            <div class="footer-links">
-                <a href="#">Disney</a>
-                <a href="#">Pixar</a>
-                <a href="#">Marvel</a>
-                <a href="#">Star Wars</a>
-                <a href="#">National Geographic</a>
-                <a href="#">Star</a>
-            </div>
-        </div>
+        </aside>
     </div>
     <script src="script.js"></script>
 </body>
