@@ -29,3 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
         carousel.scrollLeft = scrollLeft - walk;
     });
 });
+//https://www.youtube.com/watch?v=AO1XmKnNU-o//
